@@ -21,7 +21,7 @@
 
 #pragma GCC optimize ("O3")
 
-#include <pgmspace.h>
+#include <avr/pgmspace.h>
 #  include "config.h"
 
 # include "global.h"

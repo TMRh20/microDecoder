@@ -4,7 +4,7 @@
 #include "Arduino.h"
 #include "libmad/config.h"
 #include "libmad/mad.h"
-#include "FS.h"
+#include "SD.h"
 #include "pcm.h"
 
 class mp3 {
