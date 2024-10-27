@@ -33,7 +33,7 @@ while(notDecoded){
 		
   if (retval < 0) {
    memset(_audio.interleaved,0,128);
-   _audio.nSamps=32;	
+   _audio.nSamps=64;
    return(_audio);
   }
 		
@@ -75,7 +75,7 @@ while (i<32) {
  _audio.interleaved[k++] = _synth->pcm.samples[1][j++]; 
  } 
 
-_audio.nSamps=32;
+_audio.nSamps=64;
 _audio.Fs = _synth->pcm.samplerate;
 	
 return _audio;

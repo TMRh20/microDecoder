@@ -13,13 +13,13 @@ int retval = _file.read(_Buf,128);
 
 if (retval <= 0) {
 	memset(_audio.interleaved,0,128);
-    _audio.nSamps=32;	
+    _audio.nSamps=64;	
     return(_audio);
 }
 		
 
 _audio.interleaved=(int16_t*)_Buf; 
-_audio.nSamps=32;
+_audio.nSamps=64;
 
 	
 return _audio;
